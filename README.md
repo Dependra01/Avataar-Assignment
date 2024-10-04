@@ -44,26 +44,29 @@ To run this project, make sure you have Python installed along with the necessar
 ## Usage
 
 To run the segmentation and repositioning scripts, use the following commands:
-# Task 1: Segmenting Objects
+### Task 1: Segmenting Objects
 Description: The script identifies and segments a specified object class within an image, applying a red mask to highlight the object.
 
-    ```bash
     python task1.py --image ./path/to/your/image.jpg --object_class <class_name> --output ./path/to/output/image.png
+  
 Replace <class_name> with one of the supported classes (e.g., curtains, window, armchair, etc.).
 
-# Task 2: Changing Object Positions
+### Task 2: Changing Object Positions
 Description: After segmentation, the object can be repositioned within the image based on user-defined pixel shifts.
-
-    ```bash
+      
     python task2.py --image ./path/to/your/image.jpg --object_class <class_name> --x <x_shift> --y <y_shift> --output ./path/to/output/image.png
+      
 Here, <x_shift> and <y_shift> specify the number of pixels to move the object in the horizontal and vertical directions, respectively.
 
 ## Results
-Example Input: ![bagpack](https://github.com/user-attachments/assets/ba54e928-1294-47c3-b0b6-bf50624a57e4)
+### Example Input: 
+![bagpack](https://github.com/user-attachments/assets/ba54e928-1294-47c3-b0b6-bf50624a57e4)
 
-Segmented Output: ![segmented_image](https://github.com/user-attachments/assets/f7a2b753-73e5-4510-ba00-960d605c82c7)
+### Segmented Output: 
+![segmented_image](https://github.com/user-attachments/assets/f7a2b753-73e5-4510-ba00-960d605c82c7)
 
-Shifted Output: ![shifted_image](https://github.com/user-attachments/assets/56419a93-d2aa-4b9e-ab55-2b2579d53055)
+### Shifted Output: 
+![shifted_image](https://github.com/user-attachments/assets/56419a93-d2aa-4b9e-ab55-2b2579d53055)
 
 ## References
 Segment Anything Model (SAM)
