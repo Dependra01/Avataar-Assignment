@@ -27,3 +27,24 @@ To run this project, make sure you have Python installed along with the necessar
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
+
+2. Create a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+3. Install required packages:
+   ```bash
+   pip install torch torchvision torchaudio
+   pip install opencv-python
+   pip install numpy
+   
+4. Download the SAM model checkpoint and place it in the root directory:
+   https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+
+## Usage
+
+To run the segmentation and repositioning scripts, use the following commands:
+Task 1: Segmenting Objects
+  ```bash
+   python task1.py --image ./path/to/your/image.jpg --object_class <class_name> --output ./path/to/output/image.png
