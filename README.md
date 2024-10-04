@@ -69,7 +69,7 @@ Here, <x_shift> and <y_shift> specify the number of pixels to move the object in
 ![shifted_image](https://github.com/user-attachments/assets/56419a93-d2aa-4b9e-ab55-2b2579d53055)
 
 ## References
-Segment Anything Model (SAM) (https://segment-anything.com/)
+Segment Anything Model (SAM) [SAM](https://segment-anything.com/)
 PyTorch Documentation
 OpenCV Documentation
 Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
